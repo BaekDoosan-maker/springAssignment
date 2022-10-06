@@ -25,11 +25,11 @@
 
 |Function|Method|url|request|respond|
 |---|---|---|---|---|
-|전체<br> 게시글<br> 목록조회|*GET*|/api/boards||[{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "content": "글내용"},{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "content": "글내용"} ]|
-|게시글<br>  작성|*POST*|/api/boards |{ "title" : "글제목", "username" : "유저이름","password" : "비밀번호(숫자)", "content" : "글내용"}  |{"title" : "제목", "username" : "유저이름", "password" : "비밀번호(숫자)", "content" : "글내용" } |
-|게시글<br>  조회|*GET*|/api/boards{id}||{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "content": "글내용"}|
+|전체<br> 게시글<br> 목록조회|*GET*|/api/boards||[{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "contents": "글내용"},{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "contents": "글내용"} ]|
+|게시글<br>  작성|*POST*|/api/boards |{ "title" : "글제목", "username" : "유저이름","password" : "비밀번호(숫자)", "contents" : "글내용"}  |{"title" : "제목", "username" : "유저이름", "password" : "비밀번호(숫자)", "contents" : "글내용" } |
+|게시글<br>  조회|*GET*|/api/boards{id}||{ "createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "contents": "글내용"}|
 |게시글<br>  비밀번호<br>  확인|*POST*|/api/boards{id}|password : 숫자 password : 숫자|false|
-|게시글 수정|*PUT*|/api/boards{id}|{"title": "제목", "username": "유저이름", "password": "비밀번호", "content": "내용"}|수정 완료 {"createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "content": "내용"}|
+|게시글 수정|*PUT*|/api/boards{id}|{"title": "제목", "username": "유저이름", "password": "비밀번호", "contents": "내용"}|수정 완료 {"createAt": "날짜/시간", "modifiedAt": "날짜/시간", "id": 아이디(숫자), "title": "제목", "username": "유저이름", "password": "비밀번호(숫자)", "contents": "내용"}|
 |게시글 삭제|*DELETE*|/api/boards{id}||삭제 완료| <br>
  <br> 
  
@@ -47,3 +47,7 @@ Board : 게시글 <br>
 <br>BoardEditRequestDto : 게시글 수정하기  <br>
 <br>BoardCheckRequestDto : 비밀번호 확인하기 <br>
 <br>BoardDeleteRequestDto : 게시글 삭제하기 <br>
+
+
+다이어그램<br><br>
+![image](https://user-images.githubusercontent.com/57098232/194226107-f91b2d76-8c53-4883-b0a0-aaf3dda19940.png)
