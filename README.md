@@ -21,7 +21,7 @@
 - 글이 삭제되게 하기  <br>
 <br>
 <br>
- <h1>API 명세서</h1> 기술매니저님의 피드백으로 Bulletinboardposts는 지나치게 이름이 길어서 이름을 board로 변경하였습니다. password를 조회시 보이지 않게 변경했습니다.
+ <h1>API 명세서</h1> 기술매니저님의 피드백으로 Bulletinboardposts는 지나치게 이름이 길어서 이름을 board로 변경하였습니다. <br> 게시글 GET 요청시password가 보이지 않게 변경했습니다.
 
 |Function|Method|url|request|respond|
 |---|---|---|---|---|
