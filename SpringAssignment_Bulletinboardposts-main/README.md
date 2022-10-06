@@ -49,5 +49,5 @@ Board : 게시글 <br>
 <br>BoardDeleteRequestDto : 게시글 삭제하기 <br>
 
 
- <h1>다이어그램</h1><br><br>
+ 다이어그램<br><br>
 ![image](https://user-images.githubusercontent.com/57098232/194226107-f91b2d76-8c53-4883-b0a0-aaf3dda19940.png)
